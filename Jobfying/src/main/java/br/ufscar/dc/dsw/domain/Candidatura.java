@@ -8,6 +8,14 @@ public class Candidatura{
 	private Vaga vaga; // still to be implemented
 	private Profissional profissional; // still to be implemented
 	
+	public Candidatura( String data, String status, Vaga vaga, Profissional profissional) {
+	
+		this.data = data;
+		this.status = status;
+		this.vaga = vaga;
+		this.profissional = profissional;
+	}
+	
 	public Candidatura(Long id, String data, String status, Vaga vaga, Profissional profissional) {
 		this.id = id;
 		this.data = data;
@@ -15,6 +23,7 @@ public class Candidatura{
 		this.vaga = vaga;
 		this.profissional = profissional;
 	}
+	
 	
 	
 	public Long getId() {
