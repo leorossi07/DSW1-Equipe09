@@ -37,7 +37,7 @@ public class CandidaturaDAO extends GenericDAO {
 	}
 	
 	// Listar as Candidaturas de acordo com o profissional
-	public List<Candidatura> getAll(Profissional profissional){
+	public List<Candidatura> getAllByProfissional(Profissional profissional){
 		
 		List<Candidatura> listaCandidaturas = new ArrayList<>();
 		
@@ -76,9 +76,5 @@ public class CandidaturaDAO extends GenericDAO {
 		return listaCandidaturas;
 	
 	
-	}
-	
-	
-	
-	
+	}		
 }
