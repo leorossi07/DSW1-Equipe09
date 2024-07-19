@@ -21,6 +21,11 @@ public class Profissional{
         this.usuario = usuario;
     }
     
+    public Profissional(String nome, String cpf) {
+    	this.nome = nome;
+    	this.cpf = cpf;
+    }
+    
     public Long getId() {
         return id;
     }
