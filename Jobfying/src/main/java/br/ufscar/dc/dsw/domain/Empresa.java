@@ -19,6 +19,21 @@ public class Empresa {
 
 	}
 	
+	public Empresa(String cnpj, String nome) {
+		this.cnpj = cnpj;
+		this.nome = nome;
+	}
+
+	public Empresa(Long id, String cnpj, String nome) {
+		this.id = id;
+		this.cnpj = cnpj;
+		this.nome = nome;
+	}
+	
+	public Empresa(Long id) {
+		this.id = id;
+	}
+	
 	public Usuario getUsuario() {
 		return usuario;
 	}
