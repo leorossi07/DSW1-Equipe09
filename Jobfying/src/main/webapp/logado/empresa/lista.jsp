@@ -40,8 +40,8 @@
 			<table border="1">
 				<tr>
 					<th><fmt:message key="enterprise.ID" /></th>
-					<th><fmt:message key="publisher.cnpj" /></th>
-					<th><fmt:message key="publisher.name" /></th>
+					<th><fmt:message key="enterprise.cnpj" /></th>
+					<th><fmt:message key="enterprise.name" /></th>
 					<th><fmt:message key="actions.link" /></th>
 				</tr>
 				<c:forEach var="empresa" items="${requestScope.listaEmpresas}">
