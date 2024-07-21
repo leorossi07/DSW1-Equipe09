@@ -14,7 +14,7 @@
                 </h1>
                 <h2>
                     <a href="/${sessionScope.contextPath}/empresas">
-                        <fmt:message key="publishers.entity" />
+                        <fmt:message key="enterprises.entity" />
                     </a>
                     &nbsp;&nbsp;&nbsp;
                     <a href="/${sessionScope.contextPath}/usuarios"> 
