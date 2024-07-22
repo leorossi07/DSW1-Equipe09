@@ -65,12 +65,6 @@
 
 ### Como rodar o código...?
 
-## Criando o Banco de Dados com Apache Derby
-java -Dderby.system.home=<caminho para o db> -Dij.protocol=jdbc:derby: -jar C:\db-derby-10.15.2.0-bin/lib/derbyrun.jar ij
-
-Depois execute `run 'db/Derby/create.sql'`;
-
-Por fim, "starta" o serve usando o comando `java -Dderby.system.home=<caminho para o db> -jar  C:\db-derby-10.15.2.0-bin/lib/derbyrun.jar server start`
 
 ## Maven Compile
 
