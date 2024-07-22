@@ -65,7 +65,7 @@
 
 ### Como rodar o código...?
 
-
+## Rode o banco de dados MySQL
 ## Maven Compile
 
 No terminal com o diretório no caminho do projeto, execute
@@ -83,3 +83,4 @@ Essa configuração garante que a aplicação Jobfying esteja totalmente funcion
 ### Considerações finais
 
 Até o momento, há algumas coisas faltando para que o projeto esteja do jeito que eu queria. Entretanto, com a falta de tempo, vou debuggar algumas páginas e adicionar outras features.
+O problema do banco de dados foi resolvido alterando para MySQL e fazendo atualizações no create.sql
