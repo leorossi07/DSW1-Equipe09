@@ -60,7 +60,7 @@ create table Candidatura(
     primary key (id),
     foreign key (vaga_id) references Vaga(id) on delete cascade,
     foreign key (profissional_id) references Profissional(id) on delete cascade,
-    unique (vaga_id, profissional_id) -- Restrição para garantir que um profissional não se candidate mais de uma vez à mesma vaga
+    unique (vaga_id, profissional_id)
 );
 
 -- Insert data into Usuario table
@@ -102,17 +102,17 @@ insert into Empresa(cnpj, nome, descricao, cidade, usuario_id) values
 ('98765432000123', 'Amazon', 'E-commerce and cloud computing giant', 'Seattle', 3),
 ('45678912345678', 'Microsoft', 'Software and technology solutions', 'Redmond', 5),
 ('23456789012345', 'Apple', 'Innovative consumer electronics', 'Cupertino', 7),
-('34567890123456', 'Facebook', 'Social media and technology company', 'Menlo Park', 9),
+('34567890123457', 'Facebook', 'Social media and technology company', 'Menlo Park', 9),
 ('56789012345678', 'Twitter', 'Microblogging and social networking service', 'San Francisco', 11),
 ('67890123456789', 'Netflix', 'Streaming service for movies and TV shows', 'Los Gatos', 13),
 ('78901234567890', 'Tesla', 'Electric vehicles and clean energy', 'Palo Alto', 15),
 ('89012345678901', 'Uber', 'Ride-hailing and food delivery service', 'San Francisco', 17),
 ('90123456789012', 'Spotify', 'Music streaming service', 'Stockholm', 19),
 ('01234567890123', 'Samsung', 'Consumer electronics and technology', 'Seoul', 21),
-('34567890123456', 'Adobe', 'Software solutions for creativity and design', 'San Jose', 23),
-('67890123456789', 'IBM', 'Information technology and consulting', 'Armonk', 25),
-('89012345678901', 'Intel', 'Semiconductor and technology company', 'Santa Clara', 27),
-('12345678901234', 'Oracle', 'Enterprise software and cloud solutions', 'Redwood City', 29);
+('34567890123458', 'Adobe', 'Software solutions for creativity and design', 'San Jose', 23),
+('67890123456780', 'IBM', 'Information technology and consulting', 'Armonk', 25),
+('89012345678902', 'Intel', 'Semiconductor and technology company', 'Santa Clara', 27),
+('12345678901235', 'Oracle', 'Enterprise software and cloud solutions', 'Redwood City', 29);
 
 -- Insert data into Profissional table
 insert into Profissional(nome, cpf, telefone, sexo, dataNascimento, usuario_id) values 
@@ -182,4 +182,3 @@ insert into Candidatura(data, status, vaga_id, profissional_id) values
 ('2024-10-20', 'ENTREVISTA', 13, 1),
 ('2024-10-25', 'NÃO SELECIONADO', 14, 2),
 ('2024-11-01', 'ABERTO', 15, 3);
-
