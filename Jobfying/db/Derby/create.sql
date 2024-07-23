@@ -1,5 +1,5 @@
 -- Connect to the database
-connect 'jdbc:derby:JobfyingTest;create=true';
+connect 'jdbc:derby:JobfyingTest;create=true;user=root;password=root';
 
 -- Create Usuario table
 CREATE TABLE Usuario(
