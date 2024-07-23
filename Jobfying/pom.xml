@@ -48,7 +48,12 @@
 		<!-- Driver JDBC (banco de dados Derby) -->
 
 		
-
+		<dependency>
+			<groupId>org.apache.derby</groupId>
+			<artifactId>derbyclient</artifactId> 
+			<version>10.14.2.0</version>
+			<scope>runtime</scope>
+		</dependency>
 		
 
 		<dependency>
