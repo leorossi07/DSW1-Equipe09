@@ -65,7 +65,12 @@
 
 ### Como rodar o código...?
 
-## Rode o banco de dados MySQL
+## Rode o banco de dados com Apache Derby
+1. Vá ao diretório do projeto e execute `java -Dderby.system.home=<caminho para db> -Dij.protocol=jdbc:derby: -jar C:\db-derby-10.15.2.0-bin/lib/derbyrun.jar ij`
+2. Após isso, execute `db/Derby/create.sql`.
+3. Inicie o server com ` java -Dderby.system.home=<caminho para db> -jar  C:\db-derby-10.15.2.0-bin/lib/derbyrun.jar server start `
+ 
+
 ## Maven Compile
 
 No terminal com o diretório no caminho do projeto, execute
@@ -82,5 +87,6 @@ Essa configuração garante que a aplicação Jobfying esteja totalmente funcion
 
 ### Considerações finais
 
-Até o momento, há algumas coisas faltando para que o projeto esteja do jeito que eu queria. Entretanto, com a falta de tempo, vou debuggar algumas páginas e adicionar outras features.
+Até o momento, há algumas coisas faltando para que o projeto esteja do jeito que eu queria. Entretanto, com a falta de tempo, vou debuggar algumas páginas e adicionar outras features futuramente
 O problema do banco de dados foi resolvido alterando para MySQL e fazendo atualizações no create.sql
+Entretanto, algumas modificações feitas fizeram com que o programa rodasse no Derby, no qual é executado a partir desse roteiro.
