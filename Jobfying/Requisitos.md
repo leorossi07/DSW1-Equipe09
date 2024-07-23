@@ -46,8 +46,8 @@ Ao clicar em uma vaga (requisito R4), o profissional pode se candidatar à vaga.
 
 ## R6: Listagem de todas as vagas de uma empresa (requer login da empresa via e-mail + senha)
 Depois de fazer login, a empresa pode visualizar todas suas vagas cadastradas.
-- [X] Implementado
-- [ ] Parcialmente implementado
+- [ ] Implementado
+- [X] Parcialmente implementado
 - [ ] Não implementado
 
 ---
@@ -82,6 +82,6 @@ O sistema deve ser internacionalizado em pelo menos dois idiomas: português + o
 
 ## R10: Tratamento de erros no CRUD
 O sistema deve tratar todos os erros possíveis (cadastros duplicados, problemas técnicos, etc.) mostrando uma página de erros amigável ao usuário e registrando o erro no console.
-- [X] Implementado
+- [ ] Implementado
 - [ ] Parcialmente implementado
-- [ ] Não implementado
+- [X] Não implementado
