@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Início</title>
+</head>
+<body>
+    <h1>Bem-vindo ao Sistema de Controle de Temperatura</h1>
+    <form th:action="@{/lista}" th:object="${intervalo}" method="POST">
+        <label for="minimo">Início:</label>
+        <input id="minimo" type="number" name="minimo" th:field="*{minimo}" required>
+        <br /><br/>
+
+        <label for="maximo">Fim:</label>
+        <input id="maximo" type="number" name="maximo" th:field="*{maximo}" required>
+        <br /> <br />
+
+        <button type="reset">Reset</button>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
