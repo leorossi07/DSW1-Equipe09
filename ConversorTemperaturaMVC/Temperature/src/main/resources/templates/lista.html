@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Temperaturas</title>
+</head>
+<body>
+    <h1>Temperaturas em Celsius e Fahrenheit</h1>
+    <table border="1" style="width: 600px; border: 1px solid black">
+        <thead>
+            <tr>
+                <th style="width: 50%; text-align: center">Temperatura (°C)</th>
+                <th style="width: 50%; text-align: center">Temperatura (°F)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="temp : ${lista}">
+                <td th:text="${temp.celsius}" style="text-align: center"></td>
+                <td th:text="${temp.fahrenheit}" style="text-align: center"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
