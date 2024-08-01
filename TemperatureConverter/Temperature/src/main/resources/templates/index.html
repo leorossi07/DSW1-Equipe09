@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{pageTitle}">Início</title>
+</head>
+<body>
+    <div style="right: 40px; position: absolute">
+        <a th:href="@{''(lang='pt')}"><img alt="Português" th:src="@{/image/Brasil.gif}" style="width: 50px;" /></a>
+        <a th:href="@{''(lang='en')}"><img alt="English" th:src="@{/image/EUA.gif}" style="width: 50px;" /></a>
+    </div>
+    <h1 th:text="#{welcomeMessage}">Bem-vindo ao Sistema de Controle de Temperatura</h1>
+    <form th:action="@{/lista}" th:object="${intervalo}" method="POST">
+        <label for="minimo" th:text="#{iniValue}">Início:</label>
+        <input id="minimo" type="number" name="minimo" th:field="*{minimo}" required>
+        <br /><br/>
+
+        <label for="maximo" th:text="#{fimValue}">Fim:</label>
+        <input id="maximo" type="number" name="maximo" th:field="*{maximo}" required>
+        <br /> <br />
+
+        <button type="reset" th:text="#{reset}">Reset</button>
+        <button type="submit" th:text="#{submit}">Enviar</button>
+    </form>
+</body>
+</html>
