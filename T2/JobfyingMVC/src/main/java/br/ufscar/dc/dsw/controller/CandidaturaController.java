@@ -39,6 +39,7 @@ public class CandidaturaController {
 		String data = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(Calendar.getInstance().getTime());
 		candidatura.setUsuario(this.getUsuario());
 		candidatura.setData(data);
+		// candidatura.setStatus("Abberto");
 		return "candidatura/cadastro";
 	}
 	
@@ -61,6 +62,8 @@ public class CandidaturaController {
 		if (result.hasErrors()) {
 			return "candidatura/cadastro";
 		}
+
+		candidatura.setStatus("Aberto");
 		
 		candidaturaService.salvar(candidatura);
 		attr.addFlashAttribute("sucess", "candidatura.create.sucess");
