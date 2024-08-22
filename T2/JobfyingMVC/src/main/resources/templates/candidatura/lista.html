@@ -36,6 +36,7 @@
 							<th class="bg-warning" th:text="#{vaga.cargaHoraria.label}"></th>
 							<th class="bg-warning" th:text="#{vaga.salario.label}"></th>
 							<th class="bg-warning" th:text="#{vaga.empresa.label}"></th>
+							<th class="bg-warning" th:text="#{candidatura.status.label}"
 						</tr>
 					</thead>
 					<tbody>
@@ -47,6 +48,7 @@
 							<td th:text="${candidatura.vaga.cargaHoraria}"></td>
 							<td th:text="${candidatura.vaga.empresa.nome}"></td>
 							<td th:text="|R$ ${#numbers.formatDecimal(candidatura.vaga.salario,2,2,'COMMA')}|"></td>
+							<td th:text="${candidatura.status}"></td>
 						</tr>
 					</tbody>
 				</table>
