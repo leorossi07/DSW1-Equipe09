@@ -20,6 +20,9 @@ public class Candidatura extends AbstractEntity<Long> {
 	@NotNull
 	@Column(columnDefinition = "DECIMAL(8,2) DEFAULT 0.0")
 	private BigDecimal salario;
+
+	@Column()
+    private String status;
     
 	@NotNull(message = "{NotNull.candidatura.vaga}")
 	@ManyToOne
@@ -62,5 +65,13 @@ public class Candidatura extends AbstractEntity<Long> {
 
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
+	}
+
+	public String getStatus(){
+		return status;
+	}
+
+	public void setStatus(String status){
+		this.status = status;
 	}
 }
