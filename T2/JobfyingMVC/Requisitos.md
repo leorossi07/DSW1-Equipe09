@@ -85,3 +85,6 @@ O sistema deve tratar todos os erros possíveis (cadastros duplicados, problemas
 - [X] Implementado
 - [ ] Parcialmente implementado
 - [ ] Não implementado
+
+
+Funcionalidades básicas implementadas, banco de dados com password criptografado.
